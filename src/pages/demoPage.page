@@ -1,0 +1,42 @@
+<apex:page showHeader="true" sidebar="true" controller="demoPageAssetController">
+	<link rel="stylesheet" href="{!URLFOR($Resource.bootstrapdemoplugins, 'bootstrap/css/bootstrap.css')}" media="all" />
+	<link rel="stylesheet" href="{!URLFOR($Resource.bootstrapdemoplugins, 'demopage_custom.css')}" media="all" />
+	<apex:includeScript value="{!URLFOR($Resource.bootstrapdemoplugins, 'jquery-1.9.1.min.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.bootstrapdemoplugins, 'bootstrap/js/bootstrap.min.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.bootstrapdemoplugins, 'bootstrap/js/bootstrap-typeahead.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.bootstrapdemoplugins, 'demoPageCustomJS.js')}" />
+
+	<script type="text/javascript">
+	var assetInfo=JSON.parse("{!JSENCODE(allAssetsJson)}");
+	</script>
+
+	<div class="bs" style="height:100%;">
+		<div class="row fullheight">
+	        <div class="col-md-2 fullheight">
+		        <div class="sidebar-pivot-sel-container">
+			        <form class="form" role="form">
+	  					<div class="form-group">
+				        	<label for="sidebar-pivot-sel" class="control-label">Show By</label>
+				        	<select id="sidebar-pivot-sel" class="form-control">
+					        	<option>Accounts</option>
+					        	<option>Products</option>
+					        </select>
+					    </div>
+					</form>
+				</div>
+
+				<div id="sidebar-data-container">
+
+				</div>
+			</div>
+	        <div class="col-md-10 fullheight fuelux">
+				<div class="table-responsive">
+				  <table class="table" id="asset-table">
+				  
+				  </table>
+				</div>
+	        </div>
+	        
+	    </div>
+	</div>	
+</apex:page>

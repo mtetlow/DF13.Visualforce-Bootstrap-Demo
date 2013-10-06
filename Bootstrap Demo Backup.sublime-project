@@ -1,0 +1,27 @@
+{
+    "folders": [
+        {
+            "path": "/Users/mikename/dev/salesforce/mavensmate/Bootstrap Demo Backup"
+        }
+    ], 
+    "settings": {
+        "auto_complete_triggers": [
+            {
+                "characters": ".", 
+                "selector": "source - comment"
+            }, 
+            {
+                "characters": ":", 
+                "selector": "text.html - comment"
+            }, 
+            {
+                "characters": "<", 
+                "selector": "text.html - comment"
+            }, 
+            {
+                "characters": " ", 
+                "selector": "text.html - comment"
+            }
+        ]
+    }
+}

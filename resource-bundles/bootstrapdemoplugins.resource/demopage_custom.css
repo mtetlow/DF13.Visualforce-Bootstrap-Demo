@@ -1,0 +1,19 @@
+.fullheight{
+	height: 100%;
+}
+
+#sidebar-data-container ul li, #sidebar-data-container ol li{
+	margin-left:0;
+}
+
+.contact_edit, .popover-controls a{
+	cursor: pointer;
+}
+
+.popover-controls a{
+	padding-left:6px;
+}
+/*Overrides*/
+.relationship-popover h3{
+	display:block !important;
+}
